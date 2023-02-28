@@ -1,13 +1,14 @@
 :root{
 --color-primary:#2584ff;
 --color-secondary:#00d9ff;
---color-ascent:#ff3400;
+--color-accent:#ff3400;
 --color-headings:#1b0760;
 --color-body:#918ca4;
 }
+/*Typography*/
 html{
     /*62.5% of 16px =10px;*/
-    font-size :62.5%;
+    font-size: 62.5%;
 }
 body
 {
@@ -38,6 +39,7 @@ p{
 }
 
 @media screen and (min-width:1024px){
+
     body{
         font-size: 1.8rem;
     }
@@ -51,3 +53,28 @@ p{
         font-size: 2.4rem;
     } 
 }
+/*links*/
+a{
+    text-decoration: none;
+}
+.link-arrow{
+    color:var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight:bold;
+
+}
+.link-arrow::after{
+ content:"-->";
+ margin-left:5px;
+ transition: margin 0.15s;
+}
+.link-arrow:hover::after{
+    margin-left:10px;
+}
+@media screen  and (min-width: 1024px){
+    .link-arrow{
+        font-size:1.5rem;
+    }
+}
+    
