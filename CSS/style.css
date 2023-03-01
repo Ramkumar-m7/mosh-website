@@ -613,3 +613,18 @@ margin-right: 1rem;
         grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
     }
 }
+
+/* plans block */
+
+/* Plans Block */
+
+.block-plans .grid {
+    gap: 8rem 4rem;
+  }
+  
+  .block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  
